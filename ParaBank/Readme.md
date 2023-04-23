@@ -78,5 +78,4 @@ testing of the ParaBank website. By following the Page Object Model and Project
 Factory design patterns, the project is scalable and easy to maintain.
 
 
-Contributing:
-This project is developed and created by Naman Jain and is open to contributions. If you find an error or want to suggest an improvement, feel free to create a pull request.
+Contributing:This project is developed and created by Naman Jain and is open to contributions. If you find an error or want to suggest an improvement, feel free to create a pull request.
