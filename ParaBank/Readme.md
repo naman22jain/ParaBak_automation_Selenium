@@ -12,9 +12,13 @@ ensure its reliability and stability.
 Requirementsp-
 
  Java
+ 
  Selenium WebDriver
+ 
  TestNG
+ 
  Maven
+ 
  ChromeDriver (or any other WebDriver executable)
 
 Project Structure-
@@ -26,9 +30,12 @@ description:
 
 base: This package contains the base classes for initializing
      WebDriver, loading properties, and setting up TestNG.
+     
  pages: This package contains the page classes for each page on the
      ParaBank website.
+     
  tests: This package contains the test classes for various test cases.
+ 
  utils: This package contains utility classes for data management,
      reading/writing to files, taking screenshots, and generating reports.
 
@@ -36,8 +43,11 @@ base: This package contains the base classes for initializing
 How to Run Tests-
 
  Clone the repository to your local machine.
+ 
  Open the project in your preferred Java IDE.
+ 
  Update the config.properties file with the correct URL and WebDriver path.
+ 
  Run the testng.xml file.
 
 Reporting-
@@ -48,8 +58,11 @@ Reporting-
 
 Test Cases-
 The following are the test cases covered in the framework:
+
  Login Test
+ 
  Registration Test
+ 
  Forgot Login info
 
 Conclusion-
