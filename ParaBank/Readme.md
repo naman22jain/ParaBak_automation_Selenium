@@ -1,6 +1,6 @@
 
 
-                                                                  ParaBank Automation Project
+                                                   ParaBank Automation Project
 
 
 
