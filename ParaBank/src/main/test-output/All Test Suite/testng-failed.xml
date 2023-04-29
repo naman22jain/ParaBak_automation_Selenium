@@ -7,6 +7,7 @@
         <methods>
           <include name="setup"/>
           <include name="destroy"/>
+          <include name="register"/>
           <include name="forgot_login_info"/>
         </methods>
       </class> <!-- TestCases.Test -->

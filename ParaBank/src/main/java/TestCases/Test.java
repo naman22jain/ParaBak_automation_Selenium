@@ -1,39 +1,35 @@
 package TestCases;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
-import org.Pages.Forgot_login_info;
-import org.Pages.Login;
-import org.Pages.RegisterButton;
-import org.Pages.RegisterPage;
+import org.Pages.*;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.BeforeClass;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
+import util.DataProvider;
 
 public class Test {
     WebDriver driver;
 
-    @BeforeClass
+    @BeforeMethod
     public void setup() {
         WebDriverManager.chromedriver().setup();
         driver = new ChromeDriver();
-        //Navigating to the Parabank webpage
         driver.get("https://parabank.parasoft.com/parabank/index.htm?ConnType=JDBC");
         driver.manage().window().maximize();
     }
-
-    @AfterClass
+    @AfterMethod
     public void destroy() {
         driver.quit();
     }
 
-    @org.testng.annotations.Test (priority = 0)
-    public void login() throws InterruptedException {
+    @org.testng.annotations.Test (dataProvider = "getsheet",dataProviderClass = DataProvider.class ,priority = 0)
+    public void login(String username,String Password) throws InterruptedException {
         Login login = new Login(driver);
-        login.enterUsername("john");
-        login.enterPass("demo");
+        login.enterUsername(username);
+        login.enterPass(Password);
         login.clickLoginButton();
-        Thread.sleep(5000);
+      Thread.sleep(1000);
     }
 
     @org.testng.annotations.Test(priority = 1)
