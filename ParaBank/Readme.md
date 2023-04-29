@@ -21,6 +21,8 @@ Requirements-
  4.Maven
  
  5.ChromeDriver (or any other WebDriver executable)
+ 
+ 6.Apache POI
 
 Project Structure-
 The project follows the Page Object Model (POM) design pattern and
